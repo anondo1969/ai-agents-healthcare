@@ -158,7 +158,7 @@ npm run build
 - [Tailwind CSS 3](https://tailwindcss.com/) - Styling
 - [Create React App](https://create-react-app.dev/) - Build tooling
 
-## 👥 Authors
+## 👥 Author
 
 - **Mahbub Ul Alam** - SciLifeLab Data Centre (mahbub.ul.alam@scilifelab.se)
 
