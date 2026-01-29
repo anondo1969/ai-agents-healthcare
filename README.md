@@ -1,6 +1,6 @@
 # 🧬 The AI agent landscape in life sciences (2024–2025)
 
-An interactive visualization showcasing the explosion of AI agents in life sciences from October 2024 to July 2025. Built for the SciLifeLab Data Centre webinar on "![Current state of AI agents in life sciences.](https://www.scilifelab.se/event/webinar-ai-agents-in-life-sciences/)"
+An interactive visualization showcasing the explosion of AI agents in life sciences from October 2024 to July 2025. Built for the SciLifeLab Data Centre webinar on "[Current state of AI agents in life sciences.](https://www.scilifelab.se/event/webinar-ai-agents-in-life-sciences/)"
 
 ![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-06B6D4?logo=tailwindcss)
