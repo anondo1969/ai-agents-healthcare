@@ -1,70 +1,179 @@
-# Getting Started with Create React App
+# 🧬 The AI agent landscape in life sciences (2024–2025)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive visualization showcasing the explosion of AI agents in life sciences from October 2024 to July 2025. Built for the SciLifeLab Data Centre webinar on "![Current state of AI agents in life sciences.](https://www.scilifelab.se/event/webinar-ai-agents-in-life-sciences/)"
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-06B6D4?logo=tailwindcss)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- **Interactive Timeline**: Visual chronological display of 10 major AI agents released between Oct 2024 - Jul 2025
+- **Category Filtering**: Click on categories to highlight agents by type (General-purpose, Omics Analysis, Therapeutics, Gene Analysis, Clinical, Knowledge Integration)
+- **Detailed Agent Cards**: For each agent, view:
+  - Key features (5 highlights)
+  - Publication with download link
+  - Live demo links
+  - GitHub repository
+  - Installation commands
+- **Demo Previews**: Embedded GIFs, videos, or screenshots for each agent
+- **Architecture Diagrams**: Zoomable (25%-200%) and draggable diagrams with mouse controls
+- **Fully Responsive**: Works on desktop and tablet screens
 
-Runs the app in the development mode.\
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 16+ installed
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/anondo1969/ai-agents-life-sciences.git
+cd ai-agents-life-sciences
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+```
+src/
+├── AgentLandscape.jsx      # Main component
+├── assets/
+│   ├── diagrams/           # Architecture diagrams (PNG)
+│   │   ├── autoba.png
+│   │   ├── biomni.png
+│   │   ├── biochatter.png
+│   │   └── ... (10 total)
+│   └── videos/             # Demo clips (GIF/MP4/PNG)
+│       ├── autoba.png
+│       ├── biomni.mp4
+│       ├── biochatter.gif
+│       └── ... (10 total)
+├── App.js
+└── index.css
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🤖 Featured Agents
 
-### `npm run build`
+| Agent | Category | Institution | Publication |
+|-------|----------|-------------|-------------|
+| **AutoBA** | Omics Analysis | KAUST | Advanced Science (Oct 2024) |
+| **MDAgents** | Clinical | MIT Media Lab | NeurIPS 2024 (Oral) |
+| **BioChatter** | General-purpose | EMBL-EBI / Heidelberg | Nature Biotechnology (Jan 2025) |
+| **ESCARGOT** | Knowledge Integration | Cedars-Sinai | Bioinformatics (Feb 2025) |
+| **TxAgent** | Therapeutics | Harvard / Zitnik Lab | arXiv (Mar 2025) |
+| **BioDiscoveryAgent** | Gene Analysis | Stanford | ICLR 2025 |
+| **SpatialAgent** | Omics Analysis | Genentech / Stanford | bioRxiv (Apr 2025) |
+| **CellAgent** | Omics Analysis | Northwestern Polytechnical | arXiv (2024) |
+| **Biomni** | General-purpose | Stanford | bioRxiv (Jun 2025) |
+| **GeneAgent** | Gene Analysis | NIH / NCBI | Nature Methods (Jul 2025) |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🎨 Customization
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Adding/Modifying Agents
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Edit the `agents` array in `AgentLandscape.jsx`:
 
-### `npm run eject`
+```javascript
+{
+  id: 11,
+  name: 'NewAgent',
+  slug: 'newagent',           // Used for asset file names
+  category: 'General-purpose', // Must match a category
+  institution: 'Your Institution',
+  monthIndex: 9,              // 0=Oct 24, 9=Jul 25
+  color: '#10B981',           // Hex color
+  features: [
+    'Feature 1',
+    'Feature 2',
+    // ... up to 5 features
+  ],
+  publication: 'Journal (Month Year)',
+  publicationLink: 'https://doi.org/...',
+  demo: 'https://demo.url.com',
+  github: 'github.com/org/repo',
+  pip: 'pip install newagent'
+}
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Adding Media Assets
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Add diagram: `src/assets/diagrams/newagent.png`
+2. Add video/gif: `src/assets/videos/newagent.gif` (or `.mp4` or `.png`)
+3. Update imports in `AgentLandscape.jsx`:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```javascript
+import diagramNewagent from './assets/diagrams/newagent.png';
+import videoNewagent from './assets/videos/newagent.gif';
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+// Add to diagrams object
+const diagrams = {
+  // ...existing
+  newagent: diagramNewagent,
+};
 
-## Learn More
+// Add to videos object
+const videos = {
+  // ...existing
+  newagent: { src: videoNewagent, type: 'gif' }, // 'gif', 'mp4', or 'png'
+};
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌐 Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### GitHub Pages
 
-### Code Splitting
+```bash
+# Build and deploy
+npm run deploy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Site is available at: `https://anondo1969.github.io/ai-agents-life-sciences`
 
-### Analyzing the Bundle Size
+### Other Platforms
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+# Build for production
+npm run build
 
-### Making a Progressive Web App
+# The 'build' folder can be deployed to:
+# - Netlify
+# - Vercel
+# - AWS S3
+# - Any static hosting
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🛠️ Built With
 
-### Advanced Configuration
+- [React 18](https://reactjs.org/) - UI Framework
+- [Tailwind CSS 3](https://tailwindcss.com/) - Styling
+- [Create React App](https://create-react-app.dev/) - Build tooling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👥 Authors
 
-### Deployment
+- **Mahbub Ul Alam** - SciLifeLab Data Centre (mahbub.ul.alam@scilifelab.se)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📄 License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🙏 Acknowledgments
+
+- SciLifeLab Data Centre for supporting this work
+- All the research teams behind the featured AI agents
+- The open-source community for the amazing tools
+
+---
+
+<p align="center">
+  Made with ❤️ for the Life Sciences AI Community
+</p>
