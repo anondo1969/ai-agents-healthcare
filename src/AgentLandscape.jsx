@@ -58,12 +58,12 @@ const agents = [
     institution: 'KAUST', date: '2024-10', monthIndex: 0, color: '#3B82F6',
     features: [
   'Runs comprehensive multi-omic analyses without coding or manual pipeline configuration',
+  'Requires only three inputs: data location, description, and research objective',
+  'Intelligently selects appropriate bioinformatics tools based on experiment type (RNA-seq, ChIP-seq, single-cell)',
   'Automatically designs custom analysis plans tailored to your specific dataset characteristics',
   'Offers local deployment options to keep sensitive research data secure on your own infrastructure',
   'Includes automatic code repair mechanism that detects and fixes errors during execution',
   'Provides detailed, readable step-by-step plans before execution begins',
-  'Requires only three inputs: data location, description, and research objective',
-  'Intelligently selects appropriate bioinformatics tools based on experiment type (RNA-seq, ChIP-seq, single-cell)',
   'Flexible beyond fixed pipelines, helping incorporate new bioinformatics tools'
 ],
     publication: 'Advanced Science (October 2024)',
@@ -77,9 +77,9 @@ const agents = [
     institution: 'MIT Media Lab', date: '2024-11', monthIndex: 1, color: '#8B5CF6',
     features:[
   'Automatically assesses medical case complexity and assigns appropriate AI collaboration level',
+  'Handles multi-modal medical data (text, pathology images, X-rays, videos)',
   'Mirrors real clinical workflows with specialist recruitment based on case requirements',
   'Enables multi-turn discussions and consensus-building among AI specialists',
-  'Handles multi-modal medical data (text, pathology images, X-rays, videos)',
   'Uses moderator agent to triage queries and resolve specialist disagreements',
   'Balances accuracy with computational efficiency (peak accuracy with just 3 agents)',
   'Recruits domain-specific specialists (neurologists, radiologists, oncologists) as needed',
@@ -95,14 +95,14 @@ const agents = [
     id: 3, name: 'BioChatter', slug: 'biochatter', category: 'General-purpose', 
     institution: 'EMBL-EBI / Heidelberg', date: '2025-01', monthIndex: 3, color: '#10B981',
     features: [
-  'Fully open-source platform ensuring transparency and reproducibility in research',
-  'Customizable to specific research domains through simple configuration files without deep programming skills',
   'Integrates AI with structured knowledge graphs and biomedical databases for evidence-grounded answers',
+  'Customizable to specific research domains through simple configuration files without deep programming skills',
+  'Connects to live web APIs for querying external tools and services',
+  'Fully open-source platform ensuring transparency and reproducibility in research',
   'Flexible deployment from cloud-based to fully local setups for data security',
   'Automates repetitive tasks like literature extraction, database queries, and data harmonization',
   'Modular design usable across many biomedical research scenarios',
-  'Allows switching between different AI model providers without code changes',
-  'Connects to live web APIs for querying external tools and services'
+  'Allows switching between different AI model providers without code changes'
 ],
     publication: 'Nature Biotechnology (January 2025)',
     publicationLink: 'https://doi.org/10.1038/s41587-024-02534-3',
@@ -115,12 +115,12 @@ const agents = [
     institution: 'Cedars-Sinai', date: '2025-02', monthIndex: 4, color: '#F59E0B',
     features: [
   'Grounds AI answers in biomedical knowledge graphs to reduce hallucinations',
-  'Shows transparent step-by-step reasoning that researchers can verify',
+  'Adaptable to various research domains (Alzheimer\'s, drug discovery, etc.)',
   'Queries structured knowledge graphs containing gene-disease-drug relationships in real time',
+  'Shows transparent step-by-step reasoning that researchers can verify',
   'Handles complex multi-step research questions through dynamic reasoning',
   'Converts strategies into executable Python code for inspection',
   'Automatically debugs and repairs code when execution fails',
-  'Adaptable to various research domains (Alzheimer\'s, drug discovery, etc.)',
   'Available as open-source installable package'
 ],
     publication: 'Bioinformatics (February 2025)',
@@ -135,11 +135,11 @@ const agents = [
     features: [
   'Provides personalized treatment recommendations considering patient-specific factors (age, comorbidities, medications)',
   'Accesses real-time FDA-approved drug information including newly approved drugs',
+  'Analyzes drugs at molecular, pharmacokinetic, and clinical levels',
   'Evaluates drug-drug interactions, contraindications, and safety profiles',
   'Generates transparent step-by-step reasoning traces for verification',
   'Integrates 211 specialized biomedical tools for comprehensive analysis',
   'Handles complex clinical scenarios (pediatric, geriatric, pregnant patients)',
-  'Analyzes drugs at molecular, pharmacokinetic, and clinical levels',
   'Pulls evidence from multiple biomedical sources with iterative refinement'
 ],
     publication: 'arXiv (March 2025)',
@@ -153,13 +153,13 @@ const agents = [
     institution: 'Stanford', date: '2025-03', monthIndex: 5, color: '#EC4899',
     features: [
   'Helps design and prioritize CRISPR genetic perturbation experiments to achieve target phenotypes',
-  'Uses built-in biological knowledge to guide experiments from the first round without requiring training data',
+  'Includes built-in "critic" to check and challenge predictions',
   'Provides transparent explanations for recommendations, citing relevant literature and pathways',
+  'Uses built-in biological knowledge to guide experiments from the first round without requiring training data',
   'Searches scientific literature and biological databases to find genes sharing properties with successful hits',
   'Learns and adapts strategy based on experimental results across rounds',
   'Designs experiments testing gene combinations, addressing vast combinatorial search spaces',
-  'Requires no machine learning expertise or model training',
-  'Includes built-in "critic" to check and challenge predictions'
+  'Requires no machine learning expertise or model training'
 ],
     publication: 'ICLR 2025',
     publicationLink: 'https://arxiv.org/abs/2405.17631',
@@ -173,10 +173,10 @@ const agents = [
     features: [
   'Covers full spatial biology workflow from experimental design to hypothesis generation',
   'Works with multiple data types (gene expression, tissue images, cell interactions)',
+  'Automates cell/tissue segmentation, clustering, and annotation',
   'Connects to external databases (PanglaoDB, CellMarker2) to enhance analysis',
   'Accessible without programming expertise through automatic tool selection',
   'Offers fully autonomous or interactive co-pilot modes',
-  'Automates cell/tissue segmentation, clustering, and annotation',
   'Maps cell-cell communication networks through ligand-receptor interactions',
   'Generates novel biological hypotheses with comprehensive scientific reports'
 ],
@@ -191,12 +191,12 @@ const agents = [
     institution: 'Northwestern Polytechnical', date: '2025-05', monthIndex: 7, color: '#3B82F6',
     features: [
   'Automates complete single-cell RNA-seq analysis pipeline from preprocessing to biological discovery',
+  'Handles batch correction, cell type annotation, and trajectory inference',
+  'Works across diverse human tissue types (blood, heart, lung, pancreas, etc.)',
   'Uses collaborative AI agents (Planner, Executor, Evaluator) working together on different analysis aspects',
   'Accepts natural language task descriptions enabling zero-code operation',
   'Automatically selects optimal tools and parameters for specific datasets',
   'Includes self-evaluation and iterative optimization for high-quality outputs',
-  'Handles batch correction, cell type annotation, and trajectory inference',
-  'Works across diverse human tissue types (blood, heart, lung, pancreas, etc.)',
   'Eliminates manual trial-and-error method selection'
 ],
     publication: 'arXiv (2024)',
@@ -211,10 +211,10 @@ const agents = [
     features: [
   'General-purpose virtual scientist handling diverse biomedical tasks from literature search to data processing',
   'Integrates 150+ tools, 105 software packages, and 59 databases into a unified environment',
+  'Achieves expert-level accuracy on wet-lab protocol design (validated in molecular cloning experiments)',
   'Automatically selects and applies appropriate tools for each research question',
   'Breaks down complex questions into logical multi-step workflows with flexible code execution',
   'Generates human-readable reports explaining findings',
-  'Achieves expert-level accuracy on wet-lab protocol design (validated in molecular cloning experiments)',
   'Analyzes messy multi-modal datasets (wearables, single-cell sequencing) to generate testable hypotheses',
   'Allows scientists to focus on discovery rather than technical implementation'
 ],
@@ -229,11 +229,11 @@ const agents = [
     institution: 'NIH / NCBI', date: '2025-07', monthIndex: 9, color: '#EC4899',
     features: [
   'Interprets gene sets by generating readable descriptions of shared biological functions',
-  'Self-verifies answers by querying 18 expert-curated databases (Gene Ontology, KEGG, Reactome, PubMed)',
-  'Provides verification reports showing database support for each claim',
   'Works across multiple species (human, mouse)',
-  'Discovers novel biological insights more detailed than standard AI approaches',
   'Standardizes gene nomenclature to avoid synonym confusion',
+  'Self-verifies answers by querying 18 expert-curated databases (Gene Ontology, KEGG, Reactome, PubMed...)',
+  'Provides verification reports showing database support for each claim',
+  'Discovers novel biological insights more detailed than standard AI approaches',
   'Iteratively refines conclusions based on real database evidence',
   'Identifies functions for gene sets poorly described in existing databases'
 ],
@@ -263,6 +263,8 @@ export default function AgentLandscape() {
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const [scrollStart, setScrollStart] = useState({ x: 0, y: 0 });
+  const [featuresExpanded, setFeaturesExpanded] = useState(false);
+  const [featureFontSize, setFeatureFontSize] = useState(20);
 
   const getCategoryIcon = (cat) => categories.find(c => c.name === cat)?.icon || '🔬';
 
@@ -300,6 +302,11 @@ export default function AgentLandscape() {
   const handleMouseLeave = (e) => {
     setIsDragging(false);
     e.currentTarget.style.cursor = 'grab';
+  };
+
+  const handleAgentSelect = (agent) => {
+    setSelectedAgent(agent);
+    setFeaturesExpanded(false);
   };
 
   const topRow = agents.filter((_, i) => i % 2 === 0);
@@ -355,7 +362,7 @@ export default function AgentLandscape() {
                     {agent && (
                       <>
                         <button
-                          onClick={() => setSelectedAgent(agent)}
+                          onClick={() => handleAgentSelect(agent)}
                           className={`px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
                             selectedAgent.id === agent.id ? 'ring-2 ring-white ring-offset-2 ring-offset-slate-700' : ''
                           } ${highlighted ? 'hover:scale-105' : ''}`}
@@ -407,7 +414,7 @@ export default function AgentLandscape() {
                           style={{backgroundColor: agent.color, opacity: highlighted ? 1 : 0.25}}
                         ></div>
                         <button
-                          onClick={() => setSelectedAgent(agent)}
+                          onClick={() => handleAgentSelect(agent)}
                           className={`px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
                             selectedAgent.id === agent.id ? 'ring-2 ring-white ring-offset-2 ring-offset-slate-700' : ''
                           } ${highlighted ? 'hover:scale-105' : ''}`}
@@ -443,47 +450,65 @@ export default function AgentLandscape() {
 
           <div className="grid md:grid-cols-2">
             <div className="p-5 border-r border-slate-600">
-              <h3 className="text-sm font-bold mb-3 text-slate-400 uppercase tracking-wide">Key Features</h3>
-              <ul className="space-y-2 mb-5">
-                {selectedAgent.features.map((feature, i) => (
+              <h3 className="font-bold mb-3 text-slate-400 uppercase tracking-wide flex items-center justify-between" style={{fontSize: `${Math.max(12, featureFontSize * 0.7)}px`}}>
+                <span>Key Features</span>
+                <div className="flex items-center gap-2 font-normal normal-case">
+                  <button onClick={() => setFeatureFontSize(Math.max(12, featureFontSize - 2))} className="px-2 py-0.5 bg-slate-600 hover:bg-slate-500 rounded text-xs">-</button>
+                  <span className="text-xs w-10 text-center">{featureFontSize}px</span>
+                  <button onClick={() => setFeatureFontSize(Math.min(50, featureFontSize + 2))} className="px-2 py-0.5 bg-slate-600 hover:bg-slate-500 rounded text-xs">+</button>
+                </div>
+              </h3>
+              <ul className="space-y-2 mb-3">
+                {(featuresExpanded ? selectedAgent.features : selectedAgent.features.slice(0, 3)).map((feature, i) => (
                   <li key={i} className="flex items-start gap-2">
-                    <span className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold mt-0.5" style={{backgroundColor: selectedAgent.color}}>
+                    <span className="flex-shrink-0 rounded-full flex items-center justify-center font-bold" style={{backgroundColor: selectedAgent.color, width: `${featureFontSize * 1.2}px`, height: `${featureFontSize * 1.2}px`, fontSize: `${featureFontSize * 0.9}px`}}>
                       {i + 1}
                     </span>
-                    <span className="text-slate-200 text-sm leading-relaxed">{feature}</span>
+                    <span className="text-slate-200 leading-relaxed" style={{fontSize: `${featureFontSize}px`}}>{feature}</span>
                   </li>
                 ))}
               </ul>
+              {selectedAgent.features.length > 3 && (
+                <button
+                  onClick={() => setFeaturesExpanded(!featuresExpanded)}
+                  className="mb-4 px-3 py-1 rounded-lg hover:bg-slate-600 transition-colors"
+                  style={{color: selectedAgent.color, fontSize: `${featureFontSize * 0.8}px`}}
+                >
+                  {featuresExpanded ? '▲ Show less' : `▼ Show ${selectedAgent.features.length - 3} more features`}
+                </button>
+              )}
 
               <div className="bg-slate-800 rounded-xl p-4 space-y-2">
                 <div className="flex items-start gap-3">
-                  <span className="text-base">📄</span>
+                  <span style={{fontSize: `${featureFontSize}px`}}>📄</span>
                   <div className="flex-1">
-                    <span className="text-xs text-slate-500">Publication:</span>
+                    <span className="text-slate-500" style={{fontSize: `${featureFontSize * 0.9}px`}}>Publication:</span>
                     <a 
                       href={selectedAgent.publicationLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-lime-400 ml-2 hover:underline"
+                      className="text-lime-400 ml-2 hover:underline"
+                      style={{fontSize: `${featureFontSize}px`}}
                     >
                       Download
                     </a>
-                    <span className="text-sm text-slate-400 mx-1">•</span>
-                    <span className="text-sm text-slate-200">{selectedAgent.publication}</span>
+                    <span className="text-slate-400 mx-1" style={{fontSize: `${featureFontSize}px`}}>•</span>
+                    <span className="text-slate-200" style={{fontSize: `${featureFontSize}px`}}>{selectedAgent.publication}</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-base">🌐</span>
+                  <span style={{fontSize: `${featureFontSize}px`}}>🌐</span>
                   <div className="flex-1">
-                    <span className="text-xs text-slate-500">Demo:</span>
+                    <span className="text-slate-500" style={{fontSize: `${featureFontSize * 0.9}px`}}>Demo:</span>
                     {selectedAgent.demo === 'NA' || selectedAgent.demo === 'NA (Soon)' || selectedAgent.demo === 'Local GUI application' ? (
-                      <span className="text-sm text-slate-200 ml-2">{selectedAgent.demo}</span>
+                      <span className="text-slate-200 ml-2" style={{fontSize: `${featureFontSize}px`}}>{selectedAgent.demo}</span>
                     ) : (
                       <a 
                         href={selectedAgent.demo.startsWith('http') ? selectedAgent.demo : `https://${selectedAgent.demo}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-lime-400 ml-2 hover:underline"
+                        className="text-lime-400 ml-2 hover:underline"
+                        style={{fontSize: `${featureFontSize}px`}}
                       >
                         {selectedAgent.demo}
                       </a>
@@ -491,17 +516,18 @@ export default function AgentLandscape() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-base">💻</span>
+                  <span style={{fontSize: `${featureFontSize}px`}}>💻</span>
                   <div className="flex-1">
-                    <span className="text-xs text-slate-500">Code:</span>
+                    <span className="text-slate-500" style={{fontSize: `${featureFontSize * 0.9}px`}}>Code:</span>
                     {selectedAgent.github === 'NA' ? (
-                      <span className="text-sm text-slate-200 ml-2">{selectedAgent.github}</span>
+                      <span className="text-slate-200 ml-2" style={{fontSize: `${featureFontSize}px`}}>{selectedAgent.github}</span>
                     ) : (
                       <a 
                         href={`https://${selectedAgent.github}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-lime-400 ml-2 hover:underline"
+                        className="text-lime-400 ml-2 hover:underline"
+                        style={{fontSize: `${featureFontSize}px`}}
                       >
                         {selectedAgent.github}
                       </a>
@@ -509,18 +535,17 @@ export default function AgentLandscape() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-base">📦</span>
+                  <span style={{fontSize: `${featureFontSize}px`}}>📦</span>
                   <div className="flex-1">
-                    <span className="text-xs text-slate-500">Install:</span>
-                    <code className="text-sm text-lime-400 ml-2 bg-slate-900 px-2 py-0.5 rounded">{selectedAgent.pip}</code>
+                    <span className="text-slate-500" style={{fontSize: `${featureFontSize * 0.9}px`}}>Install:</span>
+                    <code className="text-lime-400 ml-2 bg-slate-900 px-2 py-0.5 rounded" style={{fontSize: `${featureFontSize * 0.6}px`}}>{selectedAgent.pip}</code>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="p-5">
-              <h3 className="text-sm font-bold mb-3 text-slate-400 uppercase tracking-wide">Preview</h3>
-              <div className="bg-slate-900 rounded-xl aspect-video overflow-hidden">
+              </div>
+            <div className="p-5 flex flex-col">
+              <h3 className="font-bold mb-3 text-slate-400 uppercase tracking-wide" style={{fontSize: `${Math.max(12, featureFontSize * 0.7)}px`}}>Preview</h3>
+              <div className="bg-slate-900 rounded-xl overflow-hidden flex-1 min-h-[300px]">
                 {videos[selectedAgent.slug].type === 'mp4' ? (
                   <video 
                     key={selectedAgent.slug}
@@ -529,13 +554,13 @@ export default function AgentLandscape() {
                     loop
                     muted
                     playsInline
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
                 ) : (
                   <img 
                     src={videos[selectedAgent.slug].src} 
                     alt={`${selectedAgent.name} demo`}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
                 )}
               </div>
@@ -544,7 +569,7 @@ export default function AgentLandscape() {
 
           <div className="p-5 border-t border-slate-600">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wide">Architecture Diagram</h3>
+              <h3 className="font-bold text-slate-400 uppercase tracking-wide" style={{fontSize: `${Math.max(12, featureFontSize * 0.7)}px`}}>Architecture Diagram</h3>
               <div className="flex items-center gap-3">
                 <span className="text-xs text-slate-500">Scale:</span>
                 <input
