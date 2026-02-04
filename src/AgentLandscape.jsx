@@ -76,7 +76,7 @@ const agents = [
   { 
     id: 2, name: 'AutoBA', slug: 'autoba', category: 'Omics Analysis', 
     institution: 'KAUST', date: '2024-10-03', color: '#3B82F6',
-    row: 'top', level: 1,
+    row: 'top', level: 2,
     features: [
   'Runs comprehensive multi-omic analyses without coding or manual pipeline configuration',
   'Requires only three inputs: data location, description, and research objective',
@@ -96,7 +96,7 @@ const agents = [
   { 
     id: 3, name: 'MDAgents', slug: 'mdagents', category: 'Clinical', 
     institution: 'MIT Media Lab', date: '2024-10-30', color: '#8B5CF6',
-    row: 'bottom', level: 2,
+    row: 'bottom', level: 1,
     features:[
   'Automatically assesses medical case complexity and assigns appropriate AI collaboration level',
   'Handles multi-modal medical data (text, pathology images, X-rays, videos)',
@@ -156,7 +156,7 @@ const agents = [
   { 
     id: 6, name: 'BioDiscoveryAgent', slug: 'biodiscoveryagent', category: 'Gene Analysis', 
     institution: 'Stanford', date: '2025-03-09', color: '#EC4899',
-    row: 'top', level: 1, offsetX: -20,
+    row: 'top', level: 2, offsetX: -20,
     features: [
   'Helps design and prioritize CRISPR genetic perturbation experiments to achieve target phenotypes',
   'Includes built-in "critic" to check and challenge predictions',
@@ -176,7 +176,7 @@ const agents = [
   { 
     id: 7, name: 'TxAgent', slug: 'txagent', category: 'Therapeutics', 
     institution: 'Harvard / Zitnik Lab', date: '2025-03-14', color: '#EF4444',
-    row: 'bottom', level: 2,
+    row: 'bottom', level: 1,
     features: [
   'Provides personalized treatment recommendations considering patient-specific factors (age, comorbidities, medications)',
   'Accesses real-time FDA-approved drug information including newly approved drugs',
@@ -196,7 +196,7 @@ const agents = [
   { 
     id: 8, name: 'SpatialAgent', slug: 'spatialagent', category: 'Omics Analysis', 
     institution: 'Genentech / Stanford', date: '2025-04-06', color: '#3B82F6',
-    row: 'top', level: 2,
+    row: 'top', level: 3,
     features: [
   'Covers full spatial biology workflow from experimental design to hypothesis generation',
   'Works with multiple data types (gene expression, tissue images, cell interactions)',
@@ -236,7 +236,7 @@ const agents = [
   { 
     id: 10, name: 'GeneAgent', slug: 'geneagent', category: 'Gene Analysis', 
     institution: 'NIH / NCBI', date: '2025-07-28', color: '#EC4899',
-    row: 'top', level: 1,
+    row: 'top', level: 2,
     features: [
   'Interprets gene sets by generating readable descriptions of shared biological functions',
   'Works across multiple species (human, mouse)',
