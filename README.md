@@ -6,7 +6,7 @@
 
 **Publicly avaliable**: Open [https://anondo1969.github.io/ai-agents-life-sciences/](https://anondo1969.github.io/ai-agents-life-sciences/) to view it in your browser.
 
-An interactive visualization showcasing the explosion of AI agents in life sciences from October 2024 to July 2025.
+An interactive visualization showcasing the explosion of AI agents in life sciences from July 2024 to July 2025.
 
 Built for the SciLifeLab Data Centre webinar on "[Current state of AI agents in life sciences.](https://www.scilifelab.se/event/webinar-ai-agents-in-life-sciences/)" (February 5, 2026 at 10:00-11:00 Stockholm time, online).
 
@@ -68,20 +68,20 @@ src/
 └── index.css
 ```
 
-## Featured Agents
+## Featured Agents, Listed Chronologically
 
-| Agent | Category | Institution |
-|-------|----------|-------------|
-| **AutoBA** | Omics Analysis | KAUST |
-| **MDAgents** | Clinical | MIT Media Lab |
-| **BioChatter** | General-purpose | EMBL-EBI / Heidelberg |
-| **ESCARGOT** | Knowledge Integration | Cedars-Sinai |
-| **TxAgent** | Therapeutics | Harvard / Zitnik Lab |
-| **BioDiscoveryAgent** | Gene Analysis | Stanford |
-| **SpatialAgent** | Omics Analysis | Genentech / Stanford |
-| **CellAgent** | Omics Analysis | Northwestern Polytechnical |
-| **Biomni** | General-purpose | Stanford |
-| **GeneAgent** | Gene Analysis | NIH / NCBI |
+| Agent | Category | Institution | Publication |
+|-------|----------|-------------|-------------|
+| **CellAgent** | Omics Analysis | Northwestern Polytechnical | 13 July, 2024 (arXiv) |
+| **AutoBA** | Omics Analysis | KAUST | 03 October, 2024 (Advanced Science) |
+| **MDAgents** | Clinical | MIT Media Lab | 30 October, 2024 (NeurIPS) |
+| **BioChatter** | General-purpose | EMBL-EBI / Heidelberg | 22 January, 2025 (Nature Biotechnology) |
+| **ESCARGOT** | Knowledge Integration | Cedars-Sinai | 22 January, 2025 (Bioinformatics) |
+| **BioDiscoveryAgent** | Gene Analysis | Stanford | 09 March, 2025 (ICLR) |
+| **TxAgent** | Therapeutics | Harvard / Zitnik Lab | 14 March, 2025 (arXiv) |
+| **SpatialAgent** | Omics Analysis | Genentech / Stanford | 06 April, 2025 (bioRxiv) |
+| **Biomni** | General-purpose | Stanford | 02 June, 2025 (bioRxiv) |
+| **GeneAgent** | Gene Analysis | NIH / NCBI | 28 July, 2025 (Nature Methods) |
 
 ## Customization
 
