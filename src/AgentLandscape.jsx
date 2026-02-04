@@ -54,141 +54,9 @@ const videos = {
 
 const agents = [
   { 
-    id: 1, name: 'AutoBA', slug: 'autoba', category: 'Omics Analysis', 
-    institution: 'KAUST', date: '2024-10', monthIndex: 0, color: '#3B82F6',
-    features: [
-  'Runs comprehensive multi-omic analyses without coding or manual pipeline configuration',
-  'Requires only three inputs: data location, description, and research objective',
-  'Intelligently selects appropriate bioinformatics tools based on experiment type (RNA-seq, ChIP-seq, single-cell)',
-  'Automatically designs custom analysis plans tailored to your specific dataset characteristics',
-  'Offers local deployment options to keep sensitive research data secure on your own infrastructure',
-  'Includes automatic code repair mechanism that detects and fixes errors during execution',
-  'Provides detailed, readable step-by-step plans before execution begins',
-  'Flexible beyond fixed pipelines, helping incorporate new bioinformatics tools'
-],
-    publication: 'Advanced Science (October 2024)',
-    publicationLink: 'https://doi.org/10.1002/advs.202407094',
-    demo: 'Local GUI application',
-    github: 'github.com/JoshuaChou2018/AutoBA',
-    pip: 'git clone https://github.com/JoshuaChou2018/AutoBA.git'
-  },
-  { 
-    id: 2, name: 'MDAgents', slug: 'mdagents', category: 'Clinical', 
-    institution: 'MIT Media Lab', date: '2024-11', monthIndex: 1, color: '#8B5CF6',
-    features:[
-  'Automatically assesses medical case complexity and assigns appropriate AI collaboration level',
-  'Handles multi-modal medical data (text, pathology images, X-rays, videos)',
-  'Mirrors real clinical workflows with specialist recruitment based on case requirements',
-  'Enables multi-turn discussions and consensus-building among AI specialists',
-  'Uses moderator agent to triage queries and resolve specialist disagreements',
-  'Balances accuracy with computational efficiency (peak accuracy with just 3 agents)',
-  'Recruits domain-specific specialists (neurologists, radiologists, oncologists) as needed',
-  'Follows clear stepwise workflow: complexity check → recruit experts → synthesize → decide'
-],
-    publication: 'NeurIPS 2024 (Oral)',
-    publicationLink: 'https://arxiv.org/pdf/2404.15155',
-    demo: 'mdagents2024.github.io/demo.html',
-    github: 'github.com/mitmedialab/MDAgents',
-    pip: 'git clone https://github.com/mitmedialab/MDAgents.git'
-  },
-  { 
-    id: 3, name: 'BioChatter', slug: 'biochatter', category: 'General-purpose', 
-    institution: 'EMBL-EBI / Heidelberg', date: '2025-01', monthIndex: 3, color: '#10B981',
-    features: [
-  'Integrates AI with structured knowledge graphs and biomedical databases for evidence-grounded answers',
-  'Customizable to specific research domains through simple configuration files without deep programming skills',
-  'Connects to live web APIs for querying external tools and services',
-  'Fully open-source platform ensuring transparency and reproducibility in research',
-  'Flexible deployment from cloud-based to fully local setups for data security',
-  'Automates repetitive tasks like literature extraction, database queries, and data harmonization',
-  'Modular design usable across many biomedical research scenarios',
-  'Allows switching between different AI model providers without code changes'
-],
-    publication: 'Nature Biotechnology (January 2025)',
-    publicationLink: 'https://doi.org/10.1038/s41587-024-02534-3',
-    demo: 'light.biochatter.org',
-    github: 'github.com/biocypher/biochatter',
-    pip: 'pip install biochatter'
-  },
-  { 
-    id: 4, name: 'ESCARGOT', slug: 'escargot', category: 'Knowledge Integration', 
-    institution: 'Cedars-Sinai', date: '2025-02', monthIndex: 4, color: '#F59E0B',
-    features: [
-  'Grounds AI answers in biomedical knowledge graphs to reduce hallucinations',
-  'Adaptable to various research domains (Alzheimer\'s, drug discovery, etc.)',
-  'Queries structured knowledge graphs containing gene-disease-drug relationships in real time',
-  'Shows transparent step-by-step reasoning that researchers can verify',
-  'Handles complex multi-step research questions through dynamic reasoning',
-  'Converts strategies into executable Python code for inspection',
-  'Automatically debugs and repairs code when execution fails',
-  'Available as open-source installable package'
-],
-    publication: 'Bioinformatics (February 2025)',
-    publicationLink: 'https://academic.oup.com/bioinformatics/article/41/2/btaf031/7972741',
-    demo: 'NA',
-    github: 'github.com/EpistasisLab/escargot',
-    pip: 'pip install escargot'
-  },
-  { 
-    id: 5, name: 'TxAgent', slug: 'txagent', category: 'Therapeutics', 
-    institution: 'Harvard / Zitnik Lab', date: '2025-03', monthIndex: 5, color: '#EF4444',
-    features: [
-  'Provides personalized treatment recommendations considering patient-specific factors (age, comorbidities, medications)',
-  'Accesses real-time FDA-approved drug information including newly approved drugs',
-  'Analyzes drugs at molecular, pharmacokinetic, and clinical levels',
-  'Evaluates drug-drug interactions, contraindications, and safety profiles',
-  'Generates transparent step-by-step reasoning traces for verification',
-  'Integrates 211 specialized biomedical tools for comprehensive analysis',
-  'Handles complex clinical scenarios (pediatric, geriatric, pregnant patients)',
-  'Pulls evidence from multiple biomedical sources with iterative refinement'
-],
-    publication: 'arXiv (March 2025)',
-    publicationLink: 'https://arxiv.org/abs/2503.10970',
-    demo: 'zitniklab.hms.harvard.edu/TxAgent/',
-    github: 'github.com/mims-harvard/TxAgent',
-    pip: 'pip install txagent'
-  },
-  { 
-    id: 6, name: 'BioDiscoveryAgent', slug: 'biodiscoveryagent', category: 'Gene Analysis', 
-    institution: 'Stanford', date: '2025-03', monthIndex: 5, color: '#EC4899',
-    features: [
-  'Helps design and prioritize CRISPR genetic perturbation experiments to achieve target phenotypes',
-  'Includes built-in "critic" to check and challenge predictions',
-  'Provides transparent explanations for recommendations, citing relevant literature and pathways',
-  'Uses built-in biological knowledge to guide experiments from the first round without requiring training data',
-  'Searches scientific literature and biological databases to find genes sharing properties with successful hits',
-  'Learns and adapts strategy based on experimental results across rounds',
-  'Designs experiments testing gene combinations, addressing vast combinatorial search spaces',
-  'Requires no machine learning expertise or model training'
-],
-    publication: 'ICLR 2025',
-    publicationLink: 'https://arxiv.org/abs/2405.17631',
-    demo: 'NA',
-    github: 'github.com/snap-stanford/BioDiscoveryAgent',
-    pip: 'git clone https://github.com/snap-stanford/BioDiscoveryAgent.git'
-  },
-  { 
-    id: 7, name: 'SpatialAgent', slug: 'spatialagent', category: 'Omics Analysis', 
-    institution: 'Genentech / Stanford', date: '2025-04', monthIndex: 6, color: '#3B82F6',
-    features: [
-  'Covers full spatial biology workflow from experimental design to hypothesis generation',
-  'Works with multiple data types (gene expression, tissue images, cell interactions)',
-  'Automates cell/tissue segmentation, clustering, and annotation',
-  'Connects to external databases (PanglaoDB, CellMarker2) to enhance analysis',
-  'Accessible without programming expertise through automatic tool selection',
-  'Offers fully autonomous or interactive co-pilot modes',
-  'Maps cell-cell communication networks through ligand-receptor interactions',
-  'Generates novel biological hypotheses with comprehensive scientific reports'
-],
-    publication: 'bioRxiv (April 2025)',
-    publicationLink: 'https://www.biorxiv.org/content/10.1101/2025.04.03.646459v1.full.pdf',
-    demo: 'NA (Soon)',
-    github: 'github.com/Genentech/SpatialAgent',
-    pip: 'git clone https://github.com/Genentech/SpatialAgent.git'
-  },
-  { 
-    id: 8, name: 'CellAgent', slug: 'cellagent', category: 'Omics Analysis', 
-    institution: 'Northwestern Polytechnical', date: '2025-05', monthIndex: 7, color: '#3B82F6',
+    id: 1, name: 'CellAgent', slug: 'cellagent', category: 'Omics Analysis', 
+    institution: 'Northwestern Polytechnical', date: '2024-07-13', color: '#3B82F6',
+    row: 'bottom', level: 1,
     features: [
   'Automates complete single-cell RNA-seq analysis pipeline from preprocessing to biological discovery',
   'Handles batch correction, cell type annotation, and trajectory inference',
@@ -199,15 +67,156 @@ const agents = [
   'Includes self-evaluation and iterative optimization for high-quality outputs',
   'Eliminates manual trial-and-error method selection'
 ],
-    publication: 'arXiv (2024)',
+    publication: 'arXiv, July 13, 2024',
     publicationLink: 'https://arxiv.org/abs/2407.09811',
     demo: 'http://cell.agent4science.cn/start/',
     github: 'NA',
     pip: 'NA'
   },
   { 
+    id: 2, name: 'AutoBA', slug: 'autoba', category: 'Omics Analysis', 
+    institution: 'KAUST', date: '2024-10-03', color: '#3B82F6',
+    row: 'top', level: 1,
+    features: [
+  'Runs comprehensive multi-omic analyses without coding or manual pipeline configuration',
+  'Requires only three inputs: data location, description, and research objective',
+  'Intelligently selects appropriate bioinformatics tools based on experiment type (RNA-seq, ChIP-seq, single-cell)',
+  'Automatically designs custom analysis plans tailored to your specific dataset characteristics',
+  'Offers local deployment options to keep sensitive research data secure on your own infrastructure',
+  'Includes automatic code repair mechanism that detects and fixes errors during execution',
+  'Provides detailed, readable step-by-step plans before execution begins',
+  'Flexible beyond fixed pipelines, helping incorporate new bioinformatics tools'
+],
+    publication: 'Advanced Science, October 03, 2024',
+    publicationLink: 'https://doi.org/10.1002/advs.202407094',
+    demo: 'Local GUI application',
+    github: 'github.com/JoshuaChou2018/AutoBA',
+    pip: 'git clone https://github.com/JoshuaChou2018/AutoBA.git'
+  },
+  { 
+    id: 3, name: 'MDAgents', slug: 'mdagents', category: 'Clinical', 
+    institution: 'MIT Media Lab', date: '2024-10-30', color: '#8B5CF6',
+    row: 'bottom', level: 2,
+    features:[
+  'Automatically assesses medical case complexity and assigns appropriate AI collaboration level',
+  'Handles multi-modal medical data (text, pathology images, X-rays, videos)',
+  'Mirrors real clinical workflows with specialist recruitment based on case requirements',
+  'Enables multi-turn discussions and consensus-building among AI specialists',
+  'Uses moderator agent to triage queries and resolve specialist disagreements',
+  'Balances accuracy with computational efficiency (peak accuracy with just 3 agents)',
+  'Recruits domain-specific specialists (neurologists, radiologists, oncologists) as needed',
+  'Follows clear stepwise workflow: complexity check → recruit experts → synthesize → decide'
+],
+    publication: 'NeurIPS, October 30, 2024',
+    publicationLink: 'https://arxiv.org/pdf/2404.15155',
+    demo: 'mdagents2024.github.io/demo.html',
+    github: 'github.com/mitmedialab/MDAgents',
+    pip: 'git clone https://github.com/mitmedialab/MDAgents.git'
+  },
+  { 
+    id: 4, name: 'BioChatter', slug: 'biochatter', category: 'General-purpose', 
+    institution: 'EMBL-EBI / Heidelberg', date: '2025-01-22', color: '#10B981',
+    row: 'top', level: 3,
+    features: [
+  'Integrates AI with structured knowledge graphs and biomedical databases for evidence-grounded answers',
+  'Customizable to specific research domains through simple configuration files without deep programming skills',
+  'Connects to live web APIs for querying external tools and services',
+  'Fully open-source platform ensuring transparency and reproducibility in research',
+  'Flexible deployment from cloud-based to fully local setups for data security',
+  'Automates repetitive tasks like literature extraction, database queries, and data harmonization',
+  'Modular design usable across many biomedical research scenarios',
+  'Allows switching between different AI model providers without code changes'
+],
+    publication: 'Nature Biotechnology, January 22, 2025',
+    publicationLink: 'https://doi.org/10.1038/s41587-024-02534-3',
+    demo: 'light.biochatter.org',
+    github: 'github.com/biocypher/biochatter',
+    pip: 'pip install biochatter'
+  },
+  { 
+    id: 5, name: 'ESCARGOT', slug: 'escargot', category: 'Knowledge Integration', 
+    institution: 'Cedars-Sinai', date: '2025-01-22', color: '#F59E0B',
+    row: 'bottom', level: 1,
+    features: [
+  'Grounds AI answers in biomedical knowledge graphs to reduce hallucinations',
+  'Adaptable to various research domains (Alzheimer\'s, drug discovery, etc.)',
+  'Queries structured knowledge graphs containing gene-disease-drug relationships in real time',
+  'Shows transparent step-by-step reasoning that researchers can verify',
+  'Handles complex multi-step research questions through dynamic reasoning',
+  'Converts strategies into executable Python code for inspection',
+  'Automatically debugs and repairs code when execution fails',
+  'Available as open-source installable package'
+],
+    publication: 'Bioinformatics, January 22, 2025',
+    publicationLink: 'https://academic.oup.com/bioinformatics/article/41/2/btaf031/7972741',
+    demo: 'NA',
+    github: 'github.com/EpistasisLab/escargot',
+    pip: 'pip install escargot'
+  },
+  { 
+    id: 6, name: 'BioDiscoveryAgent', slug: 'biodiscoveryagent', category: 'Gene Analysis', 
+    institution: 'Stanford', date: '2025-03-09', color: '#EC4899',
+    row: 'top', level: 1, offsetX: -20,
+    features: [
+  'Helps design and prioritize CRISPR genetic perturbation experiments to achieve target phenotypes',
+  'Includes built-in "critic" to check and challenge predictions',
+  'Provides transparent explanations for recommendations, citing relevant literature and pathways',
+  'Uses built-in biological knowledge to guide experiments from the first round without requiring training data',
+  'Searches scientific literature and biological databases to find genes sharing properties with successful hits',
+  'Learns and adapts strategy based on experimental results across rounds',
+  'Designs experiments testing gene combinations, addressing vast combinatorial search spaces',
+  'Requires no machine learning expertise or model training'
+],
+    publication: 'ICLR, March 09, 2025',
+    publicationLink: 'https://arxiv.org/abs/2405.17631',
+    demo: 'NA',
+    github: 'github.com/snap-stanford/BioDiscoveryAgent',
+    pip: 'git clone https://github.com/snap-stanford/BioDiscoveryAgent.git'
+  },
+  { 
+    id: 7, name: 'TxAgent', slug: 'txagent', category: 'Therapeutics', 
+    institution: 'Harvard / Zitnik Lab', date: '2025-03-14', color: '#EF4444',
+    row: 'bottom', level: 2,
+    features: [
+  'Provides personalized treatment recommendations considering patient-specific factors (age, comorbidities, medications)',
+  'Accesses real-time FDA-approved drug information including newly approved drugs',
+  'Analyzes drugs at molecular, pharmacokinetic, and clinical levels',
+  'Evaluates drug-drug interactions, contraindications, and safety profiles',
+  'Generates transparent step-by-step reasoning traces for verification',
+  'Integrates 211 specialized biomedical tools for comprehensive analysis',
+  'Handles complex clinical scenarios (pediatric, geriatric, pregnant patients)',
+  'Pulls evidence from multiple biomedical sources with iterative refinement'
+],
+    publication: 'arXiv, March 14, 2025',
+    publicationLink: 'https://arxiv.org/abs/2503.10970',
+    demo: 'zitniklab.hms.harvard.edu/TxAgent/',
+    github: 'github.com/mims-harvard/TxAgent',
+    pip: 'pip install txagent'
+  },
+  { 
+    id: 8, name: 'SpatialAgent', slug: 'spatialagent', category: 'Omics Analysis', 
+    institution: 'Genentech / Stanford', date: '2025-04-06', color: '#3B82F6',
+    row: 'top', level: 2,
+    features: [
+  'Covers full spatial biology workflow from experimental design to hypothesis generation',
+  'Works with multiple data types (gene expression, tissue images, cell interactions)',
+  'Automates cell/tissue segmentation, clustering, and annotation',
+  'Connects to external databases (PanglaoDB, CellMarker2) to enhance analysis',
+  'Accessible without programming expertise through automatic tool selection',
+  'Offers fully autonomous or interactive co-pilot modes',
+  'Maps cell-cell communication networks through ligand-receptor interactions',
+  'Generates novel biological hypotheses with comprehensive scientific reports'
+],
+    publication: 'bioRxiv, April 06, 2025',
+    publicationLink: 'https://www.biorxiv.org/content/10.1101/2025.04.03.646459v1.full.pdf',
+    demo: 'NA (Soon)',
+    github: 'github.com/Genentech/SpatialAgent',
+    pip: 'git clone https://github.com/Genentech/SpatialAgent.git'
+  },
+  { 
     id: 9, name: 'Biomni', slug: 'biomni', category: 'General-purpose', 
-    institution: 'Stanford', date: '2025-06', monthIndex: 8, color: '#10B981',
+    institution: 'Stanford', date: '2025-06-02', color: '#10B981',
+    row: 'bottom', level: 1,
     features: [
   'General-purpose virtual scientist handling diverse biomedical tasks from literature search to data processing',
   'Integrates 150+ tools, 105 software packages, and 59 databases into a unified environment',
@@ -218,7 +227,7 @@ const agents = [
   'Analyzes messy multi-modal datasets (wearables, single-cell sequencing) to generate testable hypotheses',
   'Allows scientists to focus on discovery rather than technical implementation'
 ],
-    publication: 'bioRxiv (June 2025)',
+    publication: 'bioRxiv, June 02, 2025',
     publicationLink: 'https://www.biorxiv.org/content/10.1101/2025.05.30.656746v1.full.pdf',
     demo: 'https://app.biomni.stanford.edu/',
     github: 'github.com/snap-stanford/biomni',
@@ -226,7 +235,8 @@ const agents = [
   },
   { 
     id: 10, name: 'GeneAgent', slug: 'geneagent', category: 'Gene Analysis', 
-    institution: 'NIH / NCBI', date: '2025-07', monthIndex: 9, color: '#EC4899',
+    institution: 'NIH / NCBI', date: '2025-07-28', color: '#EC4899',
+    row: 'top', level: 1,
     features: [
   'Interprets gene sets by generating readable descriptions of shared biological functions',
   'Works across multiple species (human, mouse)',
@@ -237,15 +247,13 @@ const agents = [
   'Iteratively refines conclusions based on real database evidence',
   'Identifies functions for gene sets poorly described in existing databases'
 ],
-    publication: 'Nature Methods (July 2025)',
+    publication: 'Nature Methods, July 28, 2025',
     publicationLink: 'https://www.nature.com/articles/s41592-025-02748-6',
     demo: 'ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/GeneAgent/geneagent.html',
     github: 'github.com/ncbi-nlp/GeneAgent',
     pip: 'git clone https://github.com/ncbi-nlp/GeneAgent.git'
   },
 ];
-
-const months = ['Oct 24', 'Nov 24', 'Dec 24', 'Jan 25', 'Feb 25', 'Mar 25', 'Apr 25', 'May 25', 'Jun 25', 'Jul 25'];
 
 const categories = [
   { name: 'General-purpose', color: '#10B981', icon: '🧬' },
@@ -257,14 +265,47 @@ const categories = [
 ];
 
 export default function AgentLandscape() {
-  const [selectedAgent, setSelectedAgent] = useState(agents[0]);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedAgent, setSelectedAgent] = useState(agents.find(a => a.slug === 'biochatter'));
+  const [selectedCategory, setSelectedCategory] = useState('General-purpose');
   const [diagramScale, setDiagramScale] = useState(100);
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const [scrollStart, setScrollStart] = useState({ x: 0, y: 0 });
   const [featuresExpanded, setFeaturesExpanded] = useState(false);
   const [featureFontSize, setFeatureFontSize] = useState(20);
+
+  // Timeline date calculations
+  const startDate = new Date('2024-07-13');
+  const endDate = new Date('2025-07-28');
+  const totalDays = (endDate - startDate) / (1000 * 60 * 60 * 24);
+
+  const getPosition = (dateStr) => {
+    const date = new Date(dateStr);
+    const days = (date - startDate) / (1000 * 60 * 60 * 24);
+    return 2 + (days / totalDays) * 96;
+  };
+
+  const getTopOffset = (level) => {
+    if (level === 1) return 100;
+    if (level === 2) return 50;
+    return 0;
+  };
+
+  const getTopLineHeight = (level) => {
+    if (level === 1) return 20;
+    if (level === 2) return 70;
+    return 120;
+  };
+
+  const getBottomLineHeight = (level) => level === 1 ? 20 : 70;
+
+  const formatDate = (dateStr) => {
+    const d = new Date(dateStr);
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: '2-digit' });
+  };
+
+  const topAgents = agents.filter(a => a.row === 'top');
+  const bottomAgents = agents.filter(a => a.row === 'bottom');
 
   const getCategoryIcon = (cat) => categories.find(c => c.name === cat)?.icon || '🔬';
 
@@ -309,9 +350,6 @@ export default function AgentLandscape() {
     setFeaturesExpanded(false);
   };
 
-  const topRow = agents.filter((_, i) => i % 2 === 0);
-  const bottomRow = agents.filter((_, i) => i % 2 === 1);
-
   return (
     <div className="bg-slate-800 min-h-screen text-white" style={{fontFamily: 'Segoe UI, Arial, sans-serif'}}>
       <div className="bg-slate-900 p-4 border-b border-slate-700">
@@ -351,88 +389,114 @@ export default function AgentLandscape() {
           )}
         </div>
 
-        <div className="bg-slate-700 rounded-2xl p-6 mb-6">
-          <div className="relative">
-            <div className="flex justify-between mb-4 px-4" style={{minHeight: '50px'}}>
-              {months.map((month, i) => {
-                const agent = topRow.find(a => a.monthIndex === i);
-                const highlighted = agent ? isAgentHighlighted(agent) : false;
-                return (
-                  <div key={`top-${i}`} className="flex-1 flex flex-col items-center">
-                    {agent && (
-                      <>
-                        <button
-                          onClick={() => handleAgentSelect(agent)}
-                          className={`px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
-                            selectedAgent.id === agent.id ? 'ring-2 ring-white ring-offset-2 ring-offset-slate-700' : ''
-                          } ${highlighted ? 'hover:scale-105' : ''}`}
-                          style={{
-                            backgroundColor: agent.color,
-                            opacity: highlighted ? 1 : 0.25,
-                            transform: highlighted && selectedCategory ? 'scale(1.1)' : 'scale(1)',
-                            boxShadow: highlighted && selectedCategory ? `0 0 20px ${agent.color}` : 'none'
-                          }}
-                        >
-                          {agent.name}
-                        </button>
-                        <div 
-                          className="w-0.5 h-4 mt-1 transition-opacity" 
-                          style={{backgroundColor: agent.color, opacity: highlighted ? 1 : 0.25}}
-                        ></div>
-                      </>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
+        <div className="bg-slate-700 rounded-2xl p-8 mb-6 overflow-x-auto">
+          <div className="relative" style={{height: '320px', minWidth: '900px'}}>
+            
+            {/* Top row agents - three levels */}
+            {topAgents.map(agent => (
+              <div 
+                key={agent.id}
+                className="absolute flex flex-col items-center"
+                style={{
+                  left: `calc(${getPosition(agent.date)}% + ${agent.offsetX || 0}px)`, 
+                  transform: 'translateX(-50%)',
+                  top: `${getTopOffset(agent.level)}px`,
+                  opacity: isAgentHighlighted(agent) ? 1 : 0.25
+                }}
+              >
+                <span className="text-xs text-slate-400 mb-1">{formatDate(agent.date)}</span>
+                <button
+                  onClick={() => handleAgentSelect(agent)}
+                  className={`px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
+                    selectedAgent.id === agent.id ? 'ring-2 ring-white ring-offset-2 ring-offset-slate-700' : ''
+                  } ${isAgentHighlighted(agent) ? 'hover:scale-105' : ''}`}
+                  style={{
+                    backgroundColor: agent.color,
+                    whiteSpace: 'nowrap',
+                    transform: isAgentHighlighted(agent) && selectedCategory ? 'scale(1.1)' : 'scale(1)',
+                    boxShadow: isAgentHighlighted(agent) && selectedCategory ? `0 0 20px ${agent.color}` : 'none'
+                  }}
+                >
+                  {agent.name}
+                </button>
+                <div 
+                  className="w-0.5 mt-1" 
+                  style={{backgroundColor: agent.color, height: `${getTopLineHeight(agent.level)}px`}}
+                ></div>
+              </div>
+            ))}
 
-            <div className="relative h-8 flex items-center px-4">
-              <div className="absolute left-4 right-4 h-1 bg-gradient-to-r from-blue-500 via-emerald-500 to-pink-500 rounded-full"></div>
-              {months.map((_, i) => (
-                <div key={i} className="flex-1 flex justify-center">
-                  <div className="w-3 h-3 bg-slate-500 rounded-full z-10 border-2 border-slate-700"></div>
+            {/* Timeline bar */}
+            <div className="absolute left-0 right-0" style={{top: '160px'}}>
+              <div 
+                className="absolute"
+                style={{left: '2%', transform: 'translateX(-50%)', top: '-4px'}}
+              >
+                <div className="w-3 h-3 bg-blue-500 rounded-full border-2 border-slate-700"></div>
+              </div>
+              
+              <div className="absolute h-1 bg-gradient-to-r from-blue-500 via-emerald-500 to-pink-500 rounded-full" style={{left: '2%', right: '2%'}}></div>
+              
+              <div 
+                className="absolute"
+                style={{right: '2%', transform: 'translateX(50%)', top: '-4px'}}
+              >
+                <div className="w-3 h-3 bg-pink-500 rounded-full border-2 border-slate-700"></div>
+              </div>
+
+              {/* Agent date markers on timeline */}
+              {agents.map(agent => (
+                <div 
+                  key={`marker-${agent.id}`}
+                  className="absolute"
+                  style={{
+                    left: `calc(${getPosition(agent.date)}% + ${agent.offsetX || 0}px)`, 
+                    transform: 'translateX(-50%)', 
+                    top: '-4px',
+                    opacity: isAgentHighlighted(agent) ? 1 : 0.25
+                  }}
+                >
+                  <div 
+                    className="w-2 h-2 rounded-full border border-slate-600"
+                    style={{backgroundColor: agent.color}}
+                  ></div>
                 </div>
               ))}
             </div>
 
-            <div className="flex justify-between px-4 mt-2 mb-4">
-              {months.map((month, i) => (
-                <div key={i} className="flex-1 text-center text-xs text-slate-400">{month}</div>
-              ))}
-            </div>
-
-            <div className="flex justify-between px-4" style={{minHeight: '50px'}}>
-              {months.map((month, i) => {
-                const agent = bottomRow.find(a => a.monthIndex === i);
-                const highlighted = agent ? isAgentHighlighted(agent) : false;
-                return (
-                  <div key={`bottom-${i}`} className="flex-1 flex flex-col items-center">
-                    {agent && (
-                      <>
-                        <div 
-                          className="w-0.5 h-4 mb-1 transition-opacity" 
-                          style={{backgroundColor: agent.color, opacity: highlighted ? 1 : 0.25}}
-                        ></div>
-                        <button
-                          onClick={() => handleAgentSelect(agent)}
-                          className={`px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
-                            selectedAgent.id === agent.id ? 'ring-2 ring-white ring-offset-2 ring-offset-slate-700' : ''
-                          } ${highlighted ? 'hover:scale-105' : ''}`}
-                          style={{
-                            backgroundColor: agent.color,
-                            opacity: highlighted ? 1 : 0.25,
-                            transform: highlighted && selectedCategory ? 'scale(1.1)' : 'scale(1)',
-                            boxShadow: highlighted && selectedCategory ? `0 0 20px ${agent.color}` : 'none'
-                          }}
-                        >
-                          {agent.name}
-                        </button>
-                      </>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
+            {/* Bottom row agents - two levels */}
+            {bottomAgents.map(agent => (
+              <div 
+                key={agent.id}
+                className="absolute flex flex-col items-center"
+                style={{
+                  left: `calc(${getPosition(agent.date)}% + ${agent.offsetX || 0}px)`, 
+                  transform: 'translateX(-50%)',
+                  top: '185px',
+                  opacity: isAgentHighlighted(agent) ? 1 : 0.25
+                }}
+              >
+                <div 
+                  className="w-0.5 mb-1" 
+                  style={{backgroundColor: agent.color, height: `${getBottomLineHeight(agent.level)}px`}}
+                ></div>
+                <button
+                  onClick={() => handleAgentSelect(agent)}
+                  className={`px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
+                    selectedAgent.id === agent.id ? 'ring-2 ring-white ring-offset-2 ring-offset-slate-700' : ''
+                  } ${isAgentHighlighted(agent) ? 'hover:scale-105' : ''}`}
+                  style={{
+                    backgroundColor: agent.color,
+                    whiteSpace: 'nowrap',
+                    transform: isAgentHighlighted(agent) && selectedCategory ? 'scale(1.1)' : 'scale(1)',
+                    boxShadow: isAgentHighlighted(agent) && selectedCategory ? `0 0 20px ${agent.color}` : 'none'
+                  }}
+                >
+                  {agent.name}
+                </button>
+                <span className="text-xs text-slate-400 mt-1">{formatDate(agent.date)}</span>
+              </div>
+            ))}
           </div>
         </div>
 
