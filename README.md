@@ -6,7 +6,9 @@
 
 **Publicly avaliable**: Open [https://anondo1969.github.io/ai-agents-life-sciences/](https://anondo1969.github.io/ai-agents-life-sciences/) to view it in your browser.
 
-An interactive visualization showcasing the explosion of AI agents in life sciences from July 2024 to July 2025.
+An interactive visualization tool highlighting the rapid growth of AI agents in life sciences from July 2024 to July 2025.
+
+🙏🙏🙏 **Our heartfelt appreciation goes to the research teams behind each featured AI agent.** 🙏🙏🙏
 
 Built for the SciLifeLab Data Centre webinar on "[Current state of AI agents in life sciences.](https://www.scilifelab.se/event/webinar-ai-agents-in-life-sciences/)" (February 5, 2026 at 10:00-11:00 Stockholm time, online).
 
@@ -185,7 +187,7 @@ npm run build
 
 ## Author
 
-- **Mahbub Ul Alam** - SciLifeLab Data Centre (mahbub.ul.alam@scilifelab.se)
+**[Mahbub Ul Alam](https://www.linkedin.com/in/anondo/)** - SciLifeLab Data Centre (mahbub.ul.alam@scilifelab.se)
 
 ## License
 
@@ -193,8 +195,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- SciLifeLab Data Centre for supporting this work
 - All the research teams behind the featured AI agents
+- SciLifeLab Data Centre for supporting this work
 - The open-source community for the amazing tools
 
 ---
