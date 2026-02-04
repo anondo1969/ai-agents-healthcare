@@ -10,17 +10,19 @@ An interactive visualization showcasing the explosion of AI agents in life scien
 
 Built for the SciLifeLab Data Centre webinar on "[Current state of AI agents in life sciences.](https://www.scilifelab.se/event/webinar-ai-agents-in-life-sciences/)" (February 5, 2026 at 10:00-11:00 Stockholm time, online).
 
+### Preview Screenshot,  Open [https://anondo1969.github.io/ai-agents-life-sciences/](https://anondo1969.github.io/ai-agents-life-sciences/) to view it in your browser!
+
 ![Preview Screenshot](https://raw.githubusercontent.com/anondo1969/ai-agents-life-sciences/refs/heads/main/src/assets/tool_screenshot.png)
 
 ## Features
 
-- **Interactive Timeline**: Visual chronological display of 10 major AI agents released between Oct 2024 - Jul 2025
+- **Interactive Timeline**: Visual chronological display of 10 major AI agents released between July 2024 - July 2025
 - **Category Filtering**: Click on categories to highlight agents by type (General-purpose, Omics Analysis, Therapeutics, Gene Analysis, Clinical, Knowledge Integration)
 - **Detailed Agent Cards**: For each agent, view:
-  - Key features (eight highlights)
+  - Key features: eight highlights with adjustable font
   - Publication with download link
   - Live demo links
-  - GitHub repository
+  - Code repository
   - Installation commands
 - **Demo Previews**: Embedded GIFs, videos, or screenshots for each agent
 - **Architecture Diagrams**: Zoomable (25%-200%) and draggable diagrams with mouse controls
