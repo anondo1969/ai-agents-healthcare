@@ -1,17 +1,23 @@
-# 🧬 The AI agent landscape in life sciences (2024–2025)
-
-An interactive visualization showcasing the explosion of AI agents in life sciences from October 2024 to July 2025. Built for the SciLifeLab Data Centre webinar on "[Current state of AI agents in life sciences.](https://www.scilifelab.se/event/webinar-ai-agents-in-life-sciences/)"
+# The AI agent landscape in life sciences (2024–2025)
 
 ![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-06B6D4?logo=tailwindcss)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-## ✨ Features
+**Publicly avaliable**: Open [https://anondo1969.github.io/ai-agents-life-sciences/](https://anondo1969.github.io/ai-agents-life-sciences/) to view it in your browser.
+
+An interactive visualization showcasing the explosion of AI agents in life sciences from October 2024 to July 2025.
+
+Built for the SciLifeLab Data Centre webinar on "[Current state of AI agents in life sciences.](https://www.scilifelab.se/event/webinar-ai-agents-in-life-sciences/)" (February 5, 2026 at 10:00-11:00 Stockholm time, online).
+
+![Preview Screenshot](https://raw.githubusercontent.com/anondo1969/ai-agents-life-sciences/refs/heads/main/src/assets/tool_screenshot.png)
+
+## Features
 
 - **Interactive Timeline**: Visual chronological display of 10 major AI agents released between Oct 2024 - Jul 2025
 - **Category Filtering**: Click on categories to highlight agents by type (General-purpose, Omics Analysis, Therapeutics, Gene Analysis, Clinical, Knowledge Integration)
 - **Detailed Agent Cards**: For each agent, view:
-  - Key features (5 highlights)
+  - Key features (eight highlights)
   - Publication with download link
   - Live demo links
   - GitHub repository
@@ -20,13 +26,13 @@ An interactive visualization showcasing the explosion of AI agents in life scien
 - **Architecture Diagrams**: Zoomable (25%-200%) and draggable diagrams with mouse controls
 - **Fully Responsive**: Works on desktop and tablet screens
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 16+ installed
 - npm or yarn
 
-### Installation
+### Local Installation
 
 ```bash
 # Clone the repository
@@ -42,7 +48,7 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -62,22 +68,22 @@ src/
 └── index.css
 ```
 
-## 🤖 Featured Agents
+## Featured Agents
 
-| Agent | Category | Institution | Publication |
-|-------|----------|-------------|-------------|
-| **AutoBA** | Omics Analysis | KAUST | Advanced Science (Oct 2024) |
-| **MDAgents** | Clinical | MIT Media Lab | NeurIPS 2024 (Oral) |
-| **BioChatter** | General-purpose | EMBL-EBI / Heidelberg | Nature Biotechnology (Jan 2025) |
-| **ESCARGOT** | Knowledge Integration | Cedars-Sinai | Bioinformatics (Feb 2025) |
-| **TxAgent** | Therapeutics | Harvard / Zitnik Lab | arXiv (Mar 2025) |
-| **BioDiscoveryAgent** | Gene Analysis | Stanford | ICLR 2025 |
-| **SpatialAgent** | Omics Analysis | Genentech / Stanford | bioRxiv (Apr 2025) |
-| **CellAgent** | Omics Analysis | Northwestern Polytechnical | arXiv (2024) |
-| **Biomni** | General-purpose | Stanford | bioRxiv (Jun 2025) |
-| **GeneAgent** | Gene Analysis | NIH / NCBI | Nature Methods (Jul 2025) |
+| Agent | Category | Institution |
+|-------|----------|-------------|
+| **AutoBA** | Omics Analysis | KAUST |
+| **MDAgents** | Clinical | MIT Media Lab |
+| **BioChatter** | General-purpose | EMBL-EBI / Heidelberg |
+| **ESCARGOT** | Knowledge Integration | Cedars-Sinai |
+| **TxAgent** | Therapeutics | Harvard / Zitnik Lab |
+| **BioDiscoveryAgent** | Gene Analysis | Stanford |
+| **SpatialAgent** | Omics Analysis | Genentech / Stanford |
+| **CellAgent** | Omics Analysis | Northwestern Polytechnical |
+| **Biomni** | General-purpose | Stanford |
+| **GeneAgent** | Gene Analysis | NIH / NCBI |
 
-## 🎨 Customization
+## Customization
 
 ### Adding/Modifying Agents
 
@@ -100,10 +106,10 @@ Edit the `agents` array in `AgentLandscape.jsx`:
     // ... up to 8 features
   ],
   publication: 'Journal (Month Year)',
-  publicationLink: 'https://doi.org/...',
-  demo: 'https://demo.url.com',
-  github: 'github.com/org/repo',
-  pip: 'pip install newagent'
+  publicationLink: '<provide-the-download-link>',
+  demo: '<provide-live-demo-link-if-any-otherwise-NA-or-Local GUI application>',
+  github: '<provide-any-code-repo-link>',
+  pip: '<provide-installation-command>'
 }
 ```
 
@@ -145,7 +151,7 @@ const videos = {
 };
 ```
 
-## 🌐 Deployment
+## Deployment
 
 ### GitHub Pages
 
@@ -169,21 +175,21 @@ npm run build
 # - Any static hosting
 ```
 
-## 🛠️ Built With
+## Built With
 
 - [React 18](https://reactjs.org/) - UI Framework
 - [Tailwind CSS 3](https://tailwindcss.com/) - Styling
 - [Create React App](https://create-react-app.dev/) - Build tooling
 
-## 👥 Author
+## Author
 
 - **Mahbub Ul Alam** - SciLifeLab Data Centre (mahbub.ul.alam@scilifelab.se)
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - SciLifeLab Data Centre for supporting this work
 - All the research teams behind the featured AI agents
