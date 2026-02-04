@@ -82,7 +82,6 @@ src/
 ### Adding/Modifying Agents
 
 Edit the `agents` array in `AgentLandscape.jsx`:
-
 ```javascript
 {
   id: 11,
@@ -90,12 +89,15 @@ Edit the `agents` array in `AgentLandscape.jsx`:
   slug: 'newagent',           // Used for asset file names
   category: 'General-purpose', // Must match a category
   institution: 'Your Institution',
-  monthIndex: 9,              // 0=Oct 24, 9=Jul 25
+  date: '2025-08-15',         // Publication date (YYYY-MM-DD format)
   color: '#10B981',           // Hex color
+  row: 'top',                 // 'top' or 'bottom' - which side of timeline
+  level: 1,                   // 1, 2, or 3 - distance from timeline (1=closest)
+  offsetX: 0,                 // Optional: horizontal pixel offset for fine-tuning position
   features: [
     'Feature 1',
     'Feature 2',
-    // ... up to 5 features
+    // ... up to 8 features
   ],
   publication: 'Journal (Month Year)',
   publicationLink: 'https://doi.org/...',
@@ -105,12 +107,27 @@ Edit the `agents` array in `AgentLandscape.jsx`:
 }
 ```
 
+### Timeline Layout Properties
+
+The timeline positions agents based on their exact publication date. To prevent overlapping labels, use these properties:
+
+| Property | Values | Description |
+|----------|--------|-------------|
+| `row` | `'top'` or `'bottom'` | Places agent above or below the timeline |
+| `level` | `1`, `2`, or `3` | Distance from timeline (1=closest, 3=furthest). Top row supports 3 levels, bottom row supports 2 levels |
+| `offsetX` | Number (pixels) | Fine-tune horizontal position. Use negative values to shift left, positive to shift right |
+
+**Tips for avoiding overlaps:**
+- Alternate `row` values for agents with close publication dates
+- Use different `level` values when agents on the same row are close together
+- Apply small `offsetX` adjustments (-20 to +20 pixels) for fine-tuning when labels still overlap
+- If adding new agents, update the `startDate` and `endDate` in the component if they fall outside the current range (Jul 13, 2024 – Jul 28, 2025)
+
 ### Adding Media Assets
 
 1. Add diagram: `src/assets/diagrams/newagent.png`
 2. Add video/gif: `src/assets/videos/newagent.gif` (or `.mp4` or `.png`)
 3. Update imports in `AgentLandscape.jsx`:
-
 ```javascript
 import diagramNewagent from './assets/diagrams/newagent.png';
 import videoNewagent from './assets/videos/newagent.gif';
