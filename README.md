@@ -12,7 +12,9 @@ An interactive visualization tool highlighting the rapid growth of AI agents in 
 
 Built for the SciLifeLab Data Centre webinar on "[Current state of AI agents in life sciences.](https://www.scilifelab.se/event/webinar-ai-agents-in-life-sciences/)" (February 5, 2026 at 10:00-11:00 Stockholm time, online, you can watch it by clicking the image below). 
 
-[![Current state of AI agents in life sciences.](https://img.youtube.com/vi/aOtLszUsMjw/0.jpg)](https://www.youtube.com/watch?v=aOtLszUsMjw)
+[![Current state of AI agents in life sciences.](https://img.youtube.com/vi/aOtLszUsMjw/maxresdefault.jpg)](https://www.youtube.com/watch?v=aOtLszUsMjw)
+
+### [Click this link to download the slides](https://github.com/anondo1969/ai-agents-life-sciences/blob/main/src/assets/webinar_slides_current_state_of_AI_agents_in_life_sciences_Mahbub_Ul_Alam_05_02_2026.pdf)
 
 ### Preview Screenshot,  Open [https://anondo1969.github.io/ai-agents-life-sciences/](https://anondo1969.github.io/ai-agents-life-sciences/) to view it in your browser!
 
