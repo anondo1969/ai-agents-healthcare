@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/ai-agents-healthcare/static/css/main.ddf674eb.css",
+    "main.js": "/ai-agents-healthcare/static/js/main.6155e0e2.js",
+    "static/js/453.83ba2d08.chunk.js": "/ai-agents-healthcare/static/js/453.83ba2d08.chunk.js",
+    "static/media/biomni.mp4": "/ai-agents-healthcare/static/media/biomni.4f10773427976758dc60.mp4",
+    "static/media/medrax.gif": "/ai-agents-healthcare/static/media/medrax.4359cb9c1268526d9a56.gif",
+    "static/media/txagent.gif": "/ai-agents-healthcare/static/media/txagent.8c3cd5927ff49da91150.gif",
+    "static/media/pathfinder.mp4": "/ai-agents-healthcare/static/media/pathfinder.549eff8cd33c6ceee033.mp4",
+    "static/media/mdagents.gif": "/ai-agents-healthcare/static/media/mdagents.347d2f416e548397d231.gif",
+    "static/media/pathfinder.png": "/ai-agents-healthcare/static/media/pathfinder.a26da1bf0bd53bbac9ed.png",
+    "static/media/biochatter.gif": "/ai-agents-healthcare/static/media/biochatter.c6b3384b12471b53113b.gif",
+    "static/media/aipsychotherapy.png": "/ai-agents-healthcare/static/media/aipsychotherapy.bbd7f57b80fbf107ce85.png",
+    "static/media/medea.png": "/ai-agents-healthcare/static/media/medea.e7a3502c3ba219bb4a25.png",
+    "static/media/escargot.png": "/ai-agents-healthcare/static/media/escargot.a9ecdc5b815efa33d2cc.png",
+    "static/media/trialmatchai.png": "/ai-agents-healthcare/static/media/trialmatchai.ad1b6a3476fc479f7d54.png",
+    "static/media/openlensai.png": "/ai-agents-healthcare/static/media/openlensai.42aa05ee1a694fa154c1.png",
+    "static/media/mdagents.png": "/ai-agents-healthcare/static/media/mdagents.e7d729105e0d11c9be79.png",
+    "static/media/biomni.png": "/ai-agents-healthcare/static/media/biomni.294ddde381c12e05e502.png",
+    "static/media/medrax.png": "/ai-agents-healthcare/static/media/medrax.3b55861656bfce2459c1.png",
+    "static/media/biochatter.png": "/ai-agents-healthcare/static/media/biochatter.26e8425edebb8902350f.png",
+    "static/media/agentclinic.png": "/ai-agents-healthcare/static/media/agentclinic.f61fdc5dc907e2adaab2.png",
+    "static/media/medagentbench.png": "/ai-agents-healthcare/static/media/medagentbench.9e6decd70d6101dfc3de.png",
+    "static/media/geneagent.png": "/ai-agents-healthcare/static/media/geneagent.aa75c97401e90809b260.png",
+    "static/media/txagent.png": "/ai-agents-healthcare/static/media/txagent.6cad8f3a917aec4954d2.png",
+    "static/media/agentslr.png": "/ai-agents-healthcare/static/media/agentslr.5ba3f28b41227ca57172.png",
+    "index.html": "/ai-agents-healthcare/index.html",
+    "main.ddf674eb.css.map": "/ai-agents-healthcare/static/css/main.ddf674eb.css.map",
+    "main.6155e0e2.js.map": "/ai-agents-healthcare/static/js/main.6155e0e2.js.map",
+    "453.83ba2d08.chunk.js.map": "/ai-agents-healthcare/static/js/453.83ba2d08.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddf674eb.css",
+    "static/js/main.6155e0e2.js"
+  ]
+}
