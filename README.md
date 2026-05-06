@@ -229,8 +229,7 @@ npm run build
 
 - **Previous work**: [AI Agent Landscape in Life Sciences (2024–2025)](https://github.com/anondo1969/ai-agents-life-sciences) — the companion visualization covering 10 agents across broader life science domains
 - **SciLifeLab Webinar**: [Current State of AI Agents in Life Sciences](https://www.youtube.com/watch?v=aOtLszUsMjw) (February 5, 2026)
-- **Awesome list**: [Awesome AI Agents for Healthcare](https://github.com/AgenticHealthAI/Awesome-AI-Agents-for-Healthcare) — comprehensive paper collection (200+ papers)
-- **Survey**: [AI Agents in Clinical Medicine: A Systematic Review](https://www.medrxiv.org/content/10.1101/2025.08.22.25334232) (medRxiv, 2025)
+- **SciLifeLab Workshop**: [Developing AI Agents in Life Sciences](https://github.com/ScilifelabDataCentre/scilifelab-ai-agent-mcp-workshop-2026-03-05) (March 5, 2026)
 
 ## Built With
 
