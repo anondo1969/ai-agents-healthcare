@@ -4,6 +4,8 @@
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-06B6D4?logo=tailwindcss)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+Author: **[Mahbub Ul Alam](https://www.linkedin.com/in/anondo/)** — SciLifeLab Data Centre (mahbub.ul.alam@scilifelab.se)
+
 **Publicly available**: Open [https://anondo1969.github.io/ai-agents-healthcare/](https://anondo1969.github.io/ai-agents-healthcare/) to view it in your browser.
 
 An interactive visualization tool highlighting the rapid growth of AI agents in healthcare and biomedical research from January 2025 to March 2026.
@@ -19,57 +21,6 @@ Built for the [CBB Bioinformatics Seminar](https://news.ki.se/calendar/cbb-bioin
 ### Preview Screenshot — Open [https://anondo1969.github.io/ai-agents-healthcare/](https://anondo1969.github.io/ai-agents-healthcare/) to view it in your browser!
 
 ![Preview Screenshot](https://raw.githubusercontent.com/anondo1969/ai-agents-healthcare/refs/heads/main/src/assets/tool_screenshot.png)
-
-## Features
-
-- **Interactive Timeline**: Visual chronological display of 15 healthcare and biomedical research AI agents released between January 2025 – April 2026
-- **Category Filtering**: Click on categories to highlight agents by type (Clinical Decision Support, Therapeutics & Trials, Medical Imaging, Knowledge Integration, Gene & Omics Analysis, Research Workflows, General-purpose, and Mental Health)
-- **Detailed Agent Cards**: For each agent, view key features (eight highlights with adjustable font), publication with download link, live demo links, code repository, and installation commands
-- **Demo Previews**: Embedded GIFs, videos, or screenshots for each agent
-- **Architecture Diagrams**: Zoomable (25%–200%) and draggable diagrams with mouse controls
-- **Fully Responsive**: Works on desktop and tablet screens
-
-## Quick Start
-
-### Prerequisites
-- Node.js 16+ installed
-- npm or yarn
-
-### Local Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/anondo1969/ai-agents-healthcare.git
-cd ai-agents-healthcare
-
-# Install dependencies
-npm install
-
-# Start development server
-npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-## Project Structure
-
-```
-src/
-├── AgentLandscape.jsx      # Main component
-├── assets/
-│   ├── diagrams/           # Architecture diagrams (PNG)
-│   │   ├── agentslr.png
-│   │   ├── medea.png
-│   │   ├── geneagent.png
-│   │   └── ... (15 total)
-│   └── videos/             # Demo clips (GIF/MP4/PNG)
-│       ├── agentslr.png
-│       ├── txagent.gif
-│       ├── biochatter.gif
-│       └── ... (15 total)
-├── App.js
-└── index.css
-```
 
 ## Featured Agents, Listed Chronologically
 
@@ -117,9 +68,64 @@ src/
 |-------|----------|
 | BioChatter | [chat.biocypher.org](https://chat.biocypher.org) |
 | GeneAgent | [NCBI Demo](https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/GeneAgent/) |
-| OpenLens AI | [openlens.icu](http://openlens.icu) |
-| Biomni | [Web demo](https://github.com/snap-stanford/biomni) + [SciLifeLab Serve](https://serve.scilifelab.se) |
+| Biomni | [SciLifeLab Serve](https://serve.scilifelab.se) |
 
+## Features
+
+- **Interactive Timeline**: Visual chronological display of 15 healthcare and biomedical research AI agents released between January 2025 – April 2026
+- **Category Filtering**: Click on categories to highlight agents by type (Clinical Decision Support, Therapeutics & Trials, Medical Imaging, Knowledge Integration, Gene & Omics Analysis, Research Workflows, General-purpose, and Mental Health)
+- **Detailed Agent Cards**: For each agent, view key features (eight highlights with adjustable font), publication with download link, live demo links, code repository, and installation commands
+- **Demo Previews**: Embedded GIFs, videos, or screenshots for each agent
+- **Architecture Diagrams**: Zoomable (25%–200%) and draggable diagrams with mouse controls
+- **Fully Responsive**: Works on desktop and tablet screens
+
+## Related Resources
+
+- **Previous work**: [AI Agent Landscape in Life Sciences (2024–2025)](https://github.com/anondo1969/ai-agents-life-sciences) — the companion visualization covering 10 agents across broader life science domains
+- **SciLifeLab Webinar**: [Current State of AI Agents in Life Sciences](https://www.youtube.com/watch?v=aOtLszUsMjw) (February 5, 2026)
+- **SciLifeLab Workshop**: [Developing AI Agents in Life Sciences](https://github.com/ScilifelabDataCentre/scilifelab-ai-agent-mcp-workshop-2026-03-05) (March 5, 2026)
+
+## Quick Start
+
+### Prerequisites
+- Node.js 16+ installed
+- npm or yarn
+
+### Local Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/anondo1969/ai-agents-healthcare.git
+cd ai-agents-healthcare
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## Project Structure
+
+```
+src/
+├── AgentLandscape.jsx      # Main component
+├── assets/
+│   ├── diagrams/           # Architecture diagrams (PNG)
+│   │   ├── agentslr.png
+│   │   ├── medea.png
+│   │   ├── geneagent.png
+│   │   └── ... (15 total)
+│   └── videos/             # Demo clips (GIF/MP4/PNG)
+│       ├── agentslr.png
+│       ├── txagent.gif
+│       ├── biochatter.gif
+│       └── ... (15 total)
+├── App.js
+└── index.css
+```
 ## Customization
 
 ### Adding/Modifying Agents
@@ -224,22 +230,13 @@ npm run build
 # - AWS S3
 # - Any static hosting
 ```
-
-## Related Resources
-
-- **Previous work**: [AI Agent Landscape in Life Sciences (2024–2025)](https://github.com/anondo1969/ai-agents-life-sciences) — the companion visualization covering 10 agents across broader life science domains
-- **SciLifeLab Webinar**: [Current State of AI Agents in Life Sciences](https://www.youtube.com/watch?v=aOtLszUsMjw) (February 5, 2026)
-- **SciLifeLab Workshop**: [Developing AI Agents in Life Sciences](https://github.com/ScilifelabDataCentre/scilifelab-ai-agent-mcp-workshop-2026-03-05) (March 5, 2026)
-
 ## Built With
 
 - [React 18](https://reactjs.org/) — UI Framework
 - [Tailwind CSS 3](https://tailwindcss.com/) — Styling
 - [Create React App](https://create-react-app.dev/) — Build tooling
 
-## Author
 
-**[Mahbub Ul Alam](https://www.linkedin.com/in/anondo/)** — SciLifeLab Data Centre (mahbub.ul.alam@scilifelab.se)
 
 ## License
 
