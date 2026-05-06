@@ -12,6 +12,8 @@ An interactive visualization tool highlighting the rapid growth of AI agents in 
 
 Built for the [CBB Bioinformatics Seminar](https://news.ki.se/calendar/cbb-bioinformatics-seminar-ai-agents-for-biomedical-research-from-analysis-to-clinical-decision-support) at Karolinska Institutet on "AI Agents for Biomedical Research: From Analysis to Clinical Decision Support" (May 7, 2026 at 12:00–13:00, Lecture hall Petrén, Nobels väg 12B, Solna).
 
+![Presentation Slides](https://raw.githubusercontent.com/anondo1969/ai-agents-healthcare/refs/heads/main/src/assets/slides_preview.png)
+
 ### [Click this link to download the slides](https://github.com/anondo1969/ai-agents-healthcare/blob/main/src/assets/seminar_slides_ai_agents_healthcare_Mahbub_Ul_Alam_07_05_2026.pdf)
 
 ### Preview Screenshot — Open [https://anondo1969.github.io/ai-agents-healthcare/](https://anondo1969.github.io/ai-agents-healthcare/) to view it in your browser!
@@ -20,8 +22,8 @@ Built for the [CBB Bioinformatics Seminar](https://news.ki.se/calendar/cbb-bioin
 
 ## Features
 
-- **Interactive Timeline**: Visual chronological display of 15 healthcare AI agents released between January 2025 – March 2026
-- **Category Filtering**: Click on categories to highlight agents by type (Clinical Decision Support, Therapeutics & Trials, Medical Imaging, Knowledge Integration, Gene & Omics Analysis, Research Workflows, General-purpose, Mental Health)
+- **Interactive Timeline**: Visual chronological display of 15 healthcare and biomedical research AI agents released between January 2025 – April 2026
+- **Category Filtering**: Click on categories to highlight agents by type (Clinical Decision Support, Therapeutics & Trials, Medical Imaging, Knowledge Integration, Gene & Omics Analysis, Research Workflows, General-purpose, and Mental Health)
 - **Detailed Agent Cards**: For each agent, view key features (eight highlights with adjustable font), publication with download link, live demo links, code repository, and installation commands
 - **Demo Previews**: Embedded GIFs, videos, or screenshots for each agent
 - **Architecture Diagrams**: Zoomable (25%–200%) and draggable diagrams with mouse controls
@@ -73,21 +75,22 @@ src/
 
 | Agent | Category | Institution | Publication |
 |-------|----------|-------------|-------------|
-| **MDAgents** | Clinical Decision Support | MIT Media Lab | October 2024 (NeurIPS Oral) |
-| **AgentClinic** | Clinical Decision Support | Stanford / Multi-inst. | 2024 (arXiv) |
-| **AI Psychotherapy** | Mental Health | MITHAT / Multi-institutional | 23 August 2025 (CIKM 2025) |
+| **MDAgents** | Clinical Decision Support | MIT Media Lab | December 2024 (NeurIPS Oral) |
 | **BioChatter** | Knowledge Integration | EMBL-EBI / Heidelberg | 22 January 2025 (Nature Biotechnology) |
 | **ESCARGOT** | Knowledge Integration | Cedars-Sinai | 22 January 2025 (Bioinformatics) |
 | **PathFinder** | Medical Imaging | U Washington / Stanford | 13 February 2025 (ICCV 2025) |
 | **MedRAX** | Medical Imaging | U Toronto / Vector Institute | 25 February 2025 (ICML 2025) |
 | **TxAgent** | Therapeutics & Trials | Harvard / Zitnik Lab | 14 March 2025 (arXiv) |
-| **TrialMatchAI** | Therapeutics & Trials | Oslo University Hospital / CBIB | 13 May 2025 (Nature Communications) |
 | **Biomni** | General-purpose | Stanford | 02 June 2025 (bioRxiv) |
 | **GeneAgent** | Gene & Omics Analysis | NIH / NCBI | 28 July 2025 (Nature Methods) |
-| **MedAgentBench** | Clinical Decision Support | Stanford (Andrew Ng Lab) | August 2025 (NEJM AI) |
+| **MedAgentBench** | Clinical Decision Support | Stanford (Andrew Ng Lab) | August 14 2025 (NEJM AI) |
+| **AI Psychotherapy** | Mental Health | MITHAT / Multi-institutional | 23 August 2025 (CIKM 2025) |
 | **OpenLens AI** | Research Workflows | Multi-institutional | 18 September 2025 (arXiv) |
 | **Medea** | Gene & Omics Analysis | Harvard / Zitnik Lab | 16 January 2026 (bioRxiv) |
 | **AgentSLR** | Research Workflows | U Oxford / Imperial College London | 20 March 2026 (arXiv) |
+| **TrialMatchAI** | Therapeutics & Trials | Oslo University Hospital / CBIB | 25 March 2026 (Nature Communications) |
+| **AgentClinic** | Clinical Decision Support | Stanford / Multi-inst. | 27 April 2026 (npj digital medicine) |
+
 
 ## Finding the Right Agent for the Job
 
