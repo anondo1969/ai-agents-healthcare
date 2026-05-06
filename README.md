@@ -1,4 +1,4 @@
-# The AI agent landscape in healthcare (2025–2026)
+# The AI agent landscape in healthcare and biomedical research (2025–2026)
 
 ![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-06B6D4?logo=tailwindcss)
