@@ -1,7 +1,7 @@
 {
-  "name": "agent-landscape",
+  "name": "ai-agents-healthcare",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://anondo1969.github.io/ai-agents-healthcare",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
