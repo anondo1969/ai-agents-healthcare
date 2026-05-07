@@ -16,7 +16,7 @@ Built for the [CBB Bioinformatics Seminar](https://news.ki.se/calendar/cbb-bioin
 
 ![Presentation Slides](https://raw.githubusercontent.com/anondo1969/ai-agents-healthcare/refs/heads/main/src/assets/slides_preview.png)
 
-### [Click this link to download the slides](https://github.com/anondo1969/ai-agents-healthcare/blob/main/src/assets/seminar_slides_ai_agents_healthcare_Mahbub_Ul_Alam_07_05_2026.pdf)
+### [Click this link to download the slides](https://github.com/anondo1969/ai-agents-healthcare/blob/main/src/assets/presentation_slides_ai_agents_biomedical_research_Mahbub_Ul_Alam_07_05_2026.pdf)
 
 ### Preview Screenshot — Open [https://anondo1969.github.io/ai-agents-healthcare/](https://anondo1969.github.io/ai-agents-healthcare/) to view it in your browser!
 
